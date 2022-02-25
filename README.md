@@ -3,13 +3,15 @@ Xamarin Cross Page Binding with one ViewModel. Sync variables between pages. Glo
 
 This project is an example for an idea that many have asked, but few have answered.  Binding between pages.
 
-How do I have an <Entry> on one page where Text="{Binding ThisPagesText}" is entered on one page.
-  <Entry x:Name="MainEntry" Text="{Binding ThisPagesText, Mode=TwoWay}"></Entry>
-  <Label Text="{Binding ThisPagesText}" />
+How do I have an `<Entry>` on one page where `Text="{Binding ThisPagesText}"` is entered on one page.
+
+ ` <Entry x:Name="MainEntry" Text="{Binding ThisPagesText, Mode=TwoWay}"></Entry>
+  <Label Text="{Binding ThisPagesText}" />`
   
-  Then when the user navigates to another page - that pages' <Entry> or <Label> is updated with the value from the previous page.
-    <Entry x:Name="SecondEntry" Text="{Binding ThisPagesText, Mode=TwoWay}"></Entry>
-    <Label Text="{Binding ThisPagesText}" />
+  Then when the user navigates to another page - that pages'` <Entry> `or `<Label> `is updated with the value from the previous page.
+  
+   ` <Entry x:Name="SecondEntry" Text="{Binding ThisPagesText, Mode=TwoWay}"></Entry>
+    <Label Text="{Binding ThisPagesText}" />`
   
   Yes - You can pass a variable beween pages with an Asnync event... However,  when you are updating some data from a database and you want all the views
   to have the new data from which was just loaded.  How do we do that.  
